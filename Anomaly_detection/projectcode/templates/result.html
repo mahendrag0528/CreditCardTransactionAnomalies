@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isolation Forest Classifier - Results</title>
+</head>
+<body>
+    <h1>Isolation Forest Classifier - Results</h1>
+    <h2>Accuracy Score: {{ accuracy }}</h2>
+    <h2>Classification Report:</h2>
+    <pre>{{ report }}</pre>
+    <h2>Mislabeled Transactions:</h2>
+    {{ mislabel_df | safe }}
+    <h2>Confusion Matrix:</h2>
+    <img src="{{ image }}" alt="Confusion Matrix">
+</body>
+</html>
